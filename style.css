@@ -1,0 +1,115 @@
+body {
+	z-index: 1;
+    margin: 60px auto;
+    width: 70%;
+    max-width: 950px;
+}
+
+h1 {
+	z-index: 1;
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	
+}
+
+p, button, input {
+	z-index: 1;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+	margin-bottom:1em;
+}
+
+#gameboard1 {
+	z-index: 1;
+	position:absolute;
+	margin:0 auto 2em auto;
+	width:500px;
+	height:500px;
+	left: 10%;
+}
+
+#gameboard1 div {
+	position:absolute;
+	background: lightblue;
+	border: 1px solid dimgray;
+	width:50px;
+	height:50px;
+}
+
+#gameboard1 div:hover{
+    background: steelblue;
+}
+
+#gameboard2 {
+	z-index: 1;
+	position:absolute;
+	margin:0 auto 2em auto;
+	width:500px;
+	height:500px;
+	left: 60%;
+}
+
+#gameboard2 div {
+	position:absolute;
+	background: lightblue;
+	border: 1px solid dimgray;
+	width:50px;
+	height:50px;
+}
+
+#gameboard2 div:hover{
+    background: steelblue;
+}
+
+#hitZ {
+	position: absolute;
+	z-index: 2;
+	background-color: lightgreen;
+	opacity: 80;
+	width: 700px;
+	height: 250px;
+	top: 25%;
+	left: 27.5%;
+	margin: 0 auto 2em auto;
+	text-align: center;
+	font-size:5em;
+}
+
+#missZ {
+	position: absolute;
+	z-index: 2;
+	background-color: red;
+	opacity: 80;
+	width: 700px;
+	height: 250px;
+	top: 25%;
+	left: 27.5%;
+	margin: 0 auto 2em auto;
+	text-align: center;
+	font-size:5em;
+}
+
+#yourBoard {
+	position: absolute;
+	top: 75%;
+	left: 15%;
+}
+
+#oppBoard {
+	position: absolute;
+	top: 75%;
+	left: 65%;
+	text-align: right;
+}
+
+#victory {
+	position: absolute;
+	z-index: 3;
+	background-color: gold;
+	width: 700px;
+	height: 400px;
+	text-align: center;
+	top: 25%;
+	left: 27.5%;
+}

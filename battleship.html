@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Battleship!</title>
+        <script type = "text/javascript" src = "battleship.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="background-color: seashell;">
+        <div id="p1Info">
+            <label for = "box1">Enter Player 1's Name</label>
+            <input type = "text" id = "box1" name = "box1">
+
+            <label for = "box1">Enter Player 1's Coordinates</label>
+            <input type = "text" id = "box2" name = "box2">
+
+            <div id="corError" style = "display: none;">
+                <h1>Invalid Coordinates</h1>
+            </div>
+
+            <button onclick="click1()">Enter</button>
+
+        </div>
+
+        <div id = "p2Info" style="display: none;">
+            <label for = "box1">Enter Player 2's Name</label>
+            <input type = "text" id = "box3" name = "box3">
+
+            <label for = "box1">Enter Player 2's Coordinates</label>
+            <input type = "text" id = "box4" name = "box4">
+            <button onclick="click2()">Enter</button>
+        </div>
+
+        
+
+        <div id = "p1Confirm" style = "display: none;">
+            <p id = "p1ConText"></p>
+            <button onclick = "displayGrid2();displayGrid1();">OK</button>
+        </div>
+
+        <div id = "p2Confirm" style = "display: none;">
+            <p id = "p2ConText"></p>
+            <button onclick = "displayGrid2();displayGrid1();">OK</button>
+        </div>
+
+        <div id = "hit" style="color: green; display: none; text-align: right;">
+            <h2>HIT!</h2>
+        </div>
+
+        <div id = "miss" style = "color: red; display: none; text-align: right;">
+            <h2>MISS!</h2>
+        </div>
+
+        <div id = "hitZ" style="display:none;">
+            HIT!
+            <p style="font-size: xx-small;"></p>
+            <button onclick="click3()" style="font-size: medium;">OK</button>
+        </div>
+
+
+
+        <div id = "missZ" style="display: none;">
+            MISS!
+            <p style="font-size: xx-small;"></p>
+            <button onclick="click3()" style="font-size: medium;">OK</button>            
+        </div>
+
+        <div id = "gameboard1">
+        </div>
+
+        <div id = "gameboard2">
+        </div>
+
+        <h1 id = "yourBoard" style="display:none;">Your Board</h1>
+        <h1 id = "oppBoard" style="display: none;">Opponent's Board</h1>
+
+        <div id = "victory" style="display:none">
+            <h1 id="win">VICTORY!</h1>
+            <h2 id="score">Score: </h2>
+            <button onclick="reload()" style="font-size: medium;">Click to Restart</button>
+
+        </div>
+
+
+        <!p id = "player2"></p>
+        <!p id = "p1Name"></p>
+    </body>
+</html>
